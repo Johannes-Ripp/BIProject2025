@@ -216,8 +216,8 @@
 <body>
     <?php
     $priceperday=12;
-    $startdate;
-    $enddate;
+    $startdate=1;
+    $enddate=2;
     $days=$enddate-$startdate;
     ?>
 <div class="container">
