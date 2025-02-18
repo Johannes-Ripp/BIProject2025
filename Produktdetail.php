@@ -14,7 +14,7 @@
             height: 100vh;
             background-color: #f7f7f7;
             
-            
+
         }
         .container {
             background-color: white;
@@ -217,17 +217,18 @@
 </head>
 <body>
     <?php
-    $priceperday=12;
+    $priceperday=13;
     $startdate=1;
-    $enddate=2;
+    $enddate=12;
     $days=$enddate-$startdate;
+    $price=$days*$priceperday;
     ?>
 <div class="container">
 
     <div>     
         <div class="pictureandprice">
             <div class="picture"></div>
-            <div class="price">  <h2><?php echo"$priceperday"?> pro Tag</h2><p>1398€ Gesamtpreis </p>  </div>
+            <div class="price">  <h2><?php echo"$priceperday"." €"?> pro Tag</h2><p><?php echo"$price"." €"?> Gesamtpreis </p>  </div>
         </div>
         <button type="button" class="collapsible">Buchungdetails</button>
         <div class="content">
@@ -290,8 +291,8 @@
         </div>
         <div class="booking">
             <div class="time">
-                <div class="timebox">  <h4>Start</h4> <p>15.02.2025</p></div>
-                <div class="timebox">  <h4>Ende</h4> <p>15.02.2025</p></div>
+                <div class="timebox">  <h4>Start</h4> <p><?php echo"$startdate"?></p></div>
+                <div class="timebox">  <h4>Ende</h4> <p><?php echo"$enddate"?></p></div>
 
             </div>
             <button class="bookingbutton">Reservieren</button>
