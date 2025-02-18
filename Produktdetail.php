@@ -13,6 +13,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f7f7f7;
+            
         }
         .container {
             background-color: white;
