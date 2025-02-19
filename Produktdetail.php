@@ -216,7 +216,10 @@
         </style>
 </head>
 <body>
-    <?php
+
+
+    <?php 
+     
     $priceperday=13;
     $startdate=1;
     $enddate=12;
